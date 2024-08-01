@@ -1,0 +1,1 @@
+get it from https://git-scm.com/download/win
