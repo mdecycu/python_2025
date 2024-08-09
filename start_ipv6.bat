@@ -37,8 +37,7 @@ set path_miketex=%Disk%:\miktex-portable\texmfs\install\miktex\bin\x64;
 REM Flutter path
 set path_flutter=%Disk%:\flutter\bin;%java_home%\bin;%Disk%:\Android\sdk;%Disk%:\Android\sdk\tools;%Disk%:\Android\sdk\tools\bin;%Disk%:\Android\sdk\emulator;%Disk%:\Android\sdk\platform-tools;%Disk%:\flutter\bin\cache\dart-sdk\bin;%Disk%:\vscode;
 set path_node=%Disk%:\node-v14.15.4-win-x64;
-set path_tcc=%Disk%:\tmp\tcc\win32;
-rem set path_tcc=%Disk%:\tcc;
+
 set path_postgresql=%Disk%:\postgresql13\bin;
 set path_range=%Disk%:\Range3_official\bin;
 rem set path_range=%Disk%:\range-3.2.5_kmol\bin;
@@ -90,6 +89,11 @@ set VREP_PATH=%Disk%:\CoppeliaSim
 REM BOOST_ROOT for compiling coppeliasim but maybe not for linking
 REM set BOOST_ROOT=%Disk%:\boost_1_76_0\;
 set path_copsim=%Disk%:\boost_1_76_0\;%Disk%:\Strawberry\perl\bin;%Disk%:\cmake-3.21.0-windows-x86_64\bin;%Disk%:\diffutils-2.8.7-1\bin;%Disk%:\patch-2.5.9-7\bin;%D%:\jom_1_1_2;%Disk%:\LLVM\bin;%Disk%:\QtCreator\bin;%Disk%:\CoppeliaSimEdu;%Disk%:\Python312\tcl\tcl8.6;
+
+REM for CMake
+set CMAKE_C_COMPILER=%Disk%:\msys64\ucrt64\bin\gcc;
+set CMAKE_CXX_COMPILER=%Disk%:\msys64\ucrt64\bin\g++;
+
 REM set QT_QPA_PLATFORM_PLUGIN_PATH=Y:\msys64_20240507\mingw64\share\qt5\plugins\platforms
 REM set QT_PLUGIN_PATH=Y:\msys64_20240507\mingw64\share\qt5\plugins
 
@@ -102,7 +106,7 @@ set path_xsltproc=%Disk%:\xsltproc;
 REM for NX2312
 set UGII_PYTHON_DLL=%PYTHON_PATH%
 
-path=%Disk%:;%path_python%;%path_git%;%path_copsim%;%path_msys2%;%path_miketex%;%path_flutter%;%path_node%;%path_tcc%;%path_postgresql%;%path_range%;%path_lua%;%path_core%;%path_putty%;%path_vscode%;%RUST_PATH%;%path_erlang%;%path_nodejs%;%path_haskell%;%path_scite%;%path_xsltproc%;%path%;
+path=%Disk%:;%path_python%;%path_git%;%path_copsim%;%path_msys2%;%path_miketex%;%path_flutter%;%path_node%;%path_tcc%;%path_postgresql%;%path_range%;%path_lua%;%path_core%;%path_putty%;%path_vscode%;%RUST_PATH%;%path_erlang%;%path_nodejs%;%path_haskell%;%path_scite%;%path_xsltproc%;%path_gnuplot%;%path%;
 
 start /MIN cmd.exe
 start /MIN cmd.exe
